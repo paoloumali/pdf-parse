@@ -1,0 +1,28 @@
+"ITEM\n(.*\n){13}.*REMARKS\n
+>
+null
+---
+^.*REQUIRED GROSS,\n(.*\n){9}.*Bid Offer\),\n
+>
+null
+---
+"",{9,10}Occupied - Occupant Undisclosed - For Title\n(\d+ .*),\n"",{9,10}Consolidation
+>
+$1,Occupied - Occupant Undisclosed - For Title Consolidation
+---
+"Occupied - Occupant Undisclosed - For Title\nConsolidation"\n
+>
+Occupied - Occupant Undisclosed - For Title Consolidation\n
+---
+^[^0-9].*\n
+>
+null
+---
+^(\d+) (\d+)
+>
+$1,$2
+---
+,,
+>
+,
+                                                                  
